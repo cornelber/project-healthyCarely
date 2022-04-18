@@ -46,15 +46,18 @@
         }
     }
     /* Home Section */
+    .home{
+        min-height: 500px;
+    }
     .home-image{
         &-person{
-            display: none;
+            width: 53%;
         }
         &-card{
             display: none;
         }
         &-bg{
-            display: none;
+            right: -350px;
         }
     }
 }
@@ -67,7 +70,19 @@
 
     // Sections
     /* Home Section */
-
+    .home{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        min-height: auto;
+    }
+    .home-image{
+        &-person{
+            display: none;
+        }
+        &-bg{
+            display: none;
+        }
+    }
 }
 
 // /* Extra Small Devices, Phones */
@@ -95,4 +110,11 @@
     // Global
 
     // Sections
+    /* Home Section */
+    .home-content{
+        text-align: center;
+        &-title{
+            font-size: 26px;
+        }
+    }
 }
