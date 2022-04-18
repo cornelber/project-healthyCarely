@@ -1,0 +1,104 @@
+html{
+    overflow-x: hidden
+}
+
+body{
+    @extend %font-regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $black;
+}
+
+h3{
+    font-weight: 700;
+}
+
+a{
+    @extend %font-medium;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.btn,
+a.btn{
+    display: inline-block;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+    background-color: $primary;
+    color: $white;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: opacity .25s ease;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+.btn-big,
+a.btn-big{
+    display: inline-block;
+    padding: 16px 36px;
+}
+
+.card-btn,
+a.card-btn{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.second-card-btn,
+a.second-card-btn{
+    font-size: 12px;
+    color: $primary;
+    background-color: #EDF1FF;
+    padding: 8px 37px;
+    transition: all .25s ease;
+    &:hover{
+        color: $white;
+        background-color:$primary;
+        opacity: 1;
+    }
+}
+
+/* Title & Description */
+.title-upper {
+    color: $primary;
+}
+
+.title {
+    @extend %font-bold;
+    font-size: 32px;
+}
+
+.description{
+    color: $grey;
+}
+
+/* Utility */
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+/* Grid */
+.container {
+    max-width: 1400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}

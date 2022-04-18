@@ -1,0 +1,62 @@
+.header{
+    padding-top: 40px;
+    margin-bottom: 25px;
+    line-height: 1;
+    .header-row{
+        display:flex;
+        align-items: center;
+    }
+}
+// Logo
+.header-logo{
+    &-link{
+        display: inline-block;
+    }
+}
+// Navbar
+.header-nav{
+    ul{
+        margin-left: 40px;
+        display: flex;
+        li + li {
+            margin-left: 40px;
+        }
+        a{
+            display: inline-block;
+            position: relative;
+            transition: color .25s ease;
+            &::after{
+                content:'';
+                position: absolute;
+                bottom:-10px;
+                left:0;
+                height: 2px;
+                width: 0;
+                background-color: $primary;
+                transition: width .25s ease;
+            }
+            &:hover{
+                color: $primary;
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// Buttons
+.header-login{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    > * + * {
+        margin-left: 20px;
+    }
+    &-link{
+        transition:color .25s ease;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+

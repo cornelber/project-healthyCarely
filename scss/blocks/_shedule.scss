@@ -1,0 +1,39 @@
+.shedule{
+    padding-top: 150px;
+}
+
+.shedule-row{
+    display: flex;
+    .shedule-right{
+        margin-left: 70px;
+        max-width: 480px;
+        .title {
+            margin-top: 10px;
+        }
+        .description {
+            margin: 26px 0;
+        }
+        .shedule-list {
+            display: inline-block;
+            margin-bottom: 26px;
+            li {
+                @extend %font-semibold;
+                font-size: 14px;
+                clear: left;
+            }
+            li+li {
+                margin-top: 14px;
+            }
+            >li::before {
+                content: '';
+                height: 24px;
+                width: 24px;
+                background: url('../../img/icons/check.svg') no-repeat;
+                background-size: cover;
+                display: block;
+                float: left;
+                margin-right: 12px;
+            }
+        }
+    }
+}
