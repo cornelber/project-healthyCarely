@@ -1,5 +1,5 @@
 // /*==========  Desktop First  ==========*/
-
+// Custom Media Query
 @media only screen and (max-width: 1400px) {
     // General
     .container {
@@ -20,6 +20,18 @@
             right: 500px;
         }
     }
+    /* Find Section */
+    .find-row-right{
+        .find-image-person{
+            right: -20px;
+        }
+        .find-image-bg{
+            width: 55%;
+        }
+        .find-image-card{
+            right: 400px;
+        }
+    }
 }
 
 // Large Devices, Wide Screens
@@ -37,6 +49,16 @@
         justify-items: unset;
         justify-content: center;
     } 
+}
+
+// Custom Media Query
+@media only screen and (max-width: 1153px){
+    /* Find Section */
+    .find-row-right{
+        .find-image-card{
+            display: none;
+        }
+    }
 }
 
 // Medium Devices, Desktops
@@ -66,6 +88,16 @@
         }
         &-bg{
             right: -350px;
+        }
+    }
+    /* Find Section */
+    .find{
+       min-height: 500px; 
+    }
+    .find-row-right{
+        .find-image-person{
+            right: 50px;
+            width: 37%;
         }
     }
 }
@@ -99,8 +131,22 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: unset;
     }
+    /*Find Section*/
+    .find{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        min-height: auto;
+    }
+    .find-row-right{
+        .find-image-person{
+            display: none;
+        }
+        .find-image-bg{
+            display: none;
+        }
+    }
 }
-
+// Custom Media Query
 @media only screen and (max-width: 600px) {
 
     /* Solution Sections */
@@ -147,6 +193,18 @@
     .solutions-header{
         .title{
             font-size: 26px;
+        }
+    }
+    /*Find Section*/
+    .find-row{
+        .find-row-left{
+            text-align: center;
+            .title{
+                font-size: 26px;
+            }
+            .find-list{
+                text-align: center;
+            }
         }
     }
 }

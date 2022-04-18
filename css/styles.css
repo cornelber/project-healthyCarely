@@ -482,8 +482,9 @@ a.second-card-btn:hover {
 }
 
 .find {
-  padding-top: 80px;
-  height: 670px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  min-height: 670px;
   position: relative;
 }
 
@@ -531,7 +532,7 @@ a.second-card-btn:hover {
   margin-right: 12px;
 }
 
-.find-row .find-row-right {
+.find-row-right {
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -542,7 +543,7 @@ a.second-card-btn:hover {
   height: 100%;
 }
 
-.find-row .find-row-right .find-image-person {
+.find-row-right .find-image-person {
   position: absolute;
   right: 150px;
   bottom: 0;
@@ -554,7 +555,7 @@ a.second-card-btn:hover {
   z-index: 2;
 }
 
-.find-row .find-row-right .find-image-bg {
+.find-row-right .find-image-bg {
   position: absolute;
   right: -50px;
   bottom: 0;
@@ -563,11 +564,11 @@ a.second-card-btn:hover {
   z-index: 1;
 }
 
-.find-row .find-row-right .find-image-card {
+.find-row-right .find-image-card {
   z-index: 3;
   position: absolute;
   bottom: 250px;
-  right: 600px;
+  right: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,26 +589,26 @@ a.second-card-btn:hover {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.find-row .find-row-right .find-image-card .card-title {
+.find-row-right .find-image-card .card-title {
   margin-bottom: 20px;
 }
 
-.find-row .find-row-right .find-image-card .card-title p {
+.find-row-right .find-image-card .card-title p {
   font-weight: 700;
 }
 
-.find-row .find-row-right .find-image-card .card-title p + p {
+.find-row-right .find-image-card .card-title p + p {
   margin-top: 0;
   color: #696969;
   font-weight: 400;
   font-size: 12px;
 }
 
-.find-row .find-row-right .find-image-card .card-content {
+.find-row-right .find-image-card .card-content {
   margin-bottom: 20px;
 }
 
-.find-row .find-row-right .find-image-card .card-content-doctor {
+.find-row-right .find-image-card .card-content-doctor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,15 +618,15 @@ a.second-card-btn:hover {
   margin-bottom: 20px;
 }
 
-.find-row .find-row-right .find-image-card .card-content-doctor img {
+.find-row-right .find-image-card .card-content-doctor img {
   margin-right: 14px;
 }
 
-.find-row .find-row-right .find-image-card .card-content-doctor .doctor-title {
+.find-row-right .find-image-card .card-content-doctor .doctor-title {
   font-weight: 700;
 }
 
-.find-row .find-row-right .find-image-card .card-content-doctor .doctor-spec {
+.find-row-right .find-image-card .card-content-doctor .doctor-spec {
   margin-top: 0;
   color: #696969;
   font-size: 12px;
@@ -924,6 +925,16 @@ a.second-card-btn:hover {
   .home-image-card {
     right: 500px;
   }
+  /* Find Section */
+  .find-row-right .find-image-person {
+    right: -20px;
+  }
+  .find-row-right .find-image-bg {
+    width: 55%;
+  }
+  .find-row-right .find-image-card {
+    right: 400px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -938,6 +949,13 @@ a.second-card-btn:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1153px) {
+  /* Find Section */
+  .find-row-right .find-image-card {
+    display: none;
   }
 }
 
@@ -959,6 +977,14 @@ a.second-card-btn:hover {
   }
   .home-image-bg {
     right: -350px;
+  }
+  /* Find Section */
+  .find {
+    min-height: 500px;
+  }
+  .find-row-right .find-image-person {
+    right: 50px;
+    width: 37%;
   }
 }
 
@@ -985,6 +1011,18 @@ a.second-card-btn:hover {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+  /*Find Section*/
+  .find {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: auto;
+  }
+  .find-row-right .find-image-person {
+    display: none;
+  }
+  .find-row-right .find-image-bg {
+    display: none;
   }
 }
 
@@ -1022,5 +1060,15 @@ a.second-card-btn:hover {
   /* Solutions Section */
   .solutions-header .title {
     font-size: 26px;
+  }
+  /*Find Section*/
+  .find-row .find-row-left {
+    text-align: center;
+  }
+  .find-row .find-row-left .title {
+    font-size: 26px;
+  }
+  .find-row .find-row-left .find-list {
+    text-align: center;
   }
 }
