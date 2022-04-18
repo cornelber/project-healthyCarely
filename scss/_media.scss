@@ -29,6 +29,14 @@
     // Global
     
     // Sections
+    /* Solution Sections */
+    .solutions-cards{
+        grid-template-columns: repeat(2,287px);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 30px;
+        justify-items: unset;
+        justify-content: center;
+    } 
 }
 
 // Medium Devices, Desktops
@@ -83,6 +91,24 @@
             display: none;
         }
     }
+    /* Solutions Section */
+    .solutions{
+        padding: 40px 0;
+    }
+    .solutions-cards{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: unset;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Solution Sections */
+    .solutions-cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: unset;
+    }
 }
 
 // /* Extra Small Devices, Phones */
@@ -114,6 +140,12 @@
     .home-content{
         text-align: center;
         &-title{
+            font-size: 26px;
+        }
+    }
+    /* Solutions Section */
+    .solutions-header{
+        .title{
             font-size: 26px;
         }
     }
