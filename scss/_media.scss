@@ -50,11 +50,9 @@
         justify-content: center;
     }
     /* Schedule Sections */
-    .schedule.row{
-        .schedule-left{
-            display: flex;
-            align-items: center;
-        }
+    .schedule-left {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -107,16 +105,26 @@
             width: 37%;
         }
     }
-        /* Schedule Sections */
-        .schedule-row {
-            .schedule-right{
-                margin-left: 0;
-                max-width: unset;
-            }
-            .schedule-left {
-                display: none;
-            }
+    /* Schedule Sections */
+    .schedule-row {
+        .schedule-right{
+            margin-left: 0;
+            max-width: unset;
         }
+        .schedule-left {
+            display: none;
+        }
+    }
+    /* Rating Sections */
+    .rating-cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 30px;
+        justify-content: unset;
+        .card:nth-child(3){
+            grid-column: 1/3;
+        }
+    }
 }
 
 // /* Small Devices, Tablets
@@ -166,6 +174,17 @@
     .schedule{
         padding-top: 40px;
     }
+    /* Rating Sections */
+    .rating{
+        padding-top: 40px;
+    }
+    .rating-cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        .card:nth-child(3){
+            grid-column: unset;
+        }
+    }
 }
 // Custom Media Query
 @media only screen and (max-width: 600px) {
@@ -175,6 +194,11 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
         column-gap: unset;
+    }
+    /* Rating Sections */   
+    .rating-header {
+        width: 100%;
+        margin: unset;
     }
 }
 
@@ -200,6 +224,12 @@
             .title{
                 font-size: 32px;
             }
+        }
+    }
+    /* Rating Sections */
+    .rating-header{
+        .title{
+           font-size: 32px; 
         }
     }
 }
@@ -246,6 +276,17 @@
             .schedule-list{
                 text-align: center;
             }
+        }
+    }
+    /* Rating Sections */
+    .rating-cards{
+        .card{
+            padding: 50px 0 0;
+        }
+    }
+    .rating-header {
+        .title {
+            font-size: 26px;
         }
     }
 }
