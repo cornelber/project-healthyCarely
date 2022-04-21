@@ -10,7 +10,7 @@ a {
   font-weight: 500;
 }
 
-.find-row .find-row-left .find-list li, .shedule-row .shedule-right .shedule-list li {
+.find-row .find-row-left .find-list li, .schedule-row .schedule-right .schedule-list li {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
 }
@@ -632,44 +632,44 @@ a.second-card-btn:hover {
   font-size: 12px;
 }
 
-.shedule {
+.schedule {
   padding-top: 150px;
 }
 
-.shedule-row {
+.schedule-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.shedule-row .shedule-right {
+.schedule-row .schedule-right {
   margin-left: 70px;
   max-width: 480px;
 }
 
-.shedule-row .shedule-right .title {
+.schedule-row .schedule-right .title {
   margin-top: 10px;
 }
 
-.shedule-row .shedule-right .description {
+.schedule-row .schedule-right .description {
   margin: 26px 0;
 }
 
-.shedule-row .shedule-right .shedule-list {
+.schedule-row .schedule-right .schedule-list {
   display: inline-block;
   margin-bottom: 26px;
 }
 
-.shedule-row .shedule-right .shedule-list li {
+.schedule-row .schedule-right .schedule-list li {
   font-size: 14px;
   clear: left;
 }
 
-.shedule-row .shedule-right .shedule-list li + li {
+.schedule-row .schedule-right .schedule-list li + li {
   margin-top: 14px;
 }
 
-.shedule-row .shedule-right .shedule-list > li::before {
+.schedule-row .schedule-right .schedule-list > li::before {
   content: '';
   height: 24px;
   width: 24px;
@@ -950,6 +950,15 @@ a.second-card-btn:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /* Schedule Sections */
+  .schedule.row .schedule-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (max-width: 1153px) {
@@ -985,6 +994,14 @@ a.second-card-btn:hover {
   .find-row-right .find-image-person {
     right: 50px;
     width: 37%;
+  }
+  /* Schedule Sections */
+  .schedule-row .schedule-right {
+    margin-left: 0;
+    max-width: unset;
+  }
+  .schedule-row .schedule-left {
+    display: none;
   }
 }
 
@@ -1024,6 +1041,10 @@ a.second-card-btn:hover {
   .find-row-right .find-image-bg {
     display: none;
   }
+  /* Schedule Sections */
+  .schedule {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1045,6 +1066,10 @@ a.second-card-btn:hover {
   }
   /* Home Section */
   .home-content-title {
+    font-size: 32px;
+  }
+  /* Schedule Sections */
+  .schedule-row .schedule-right .title {
     font-size: 32px;
   }
 }
@@ -1069,6 +1094,16 @@ a.second-card-btn:hover {
     font-size: 26px;
   }
   .find-row .find-row-left .find-list {
+    text-align: center;
+  }
+  /* Schedule Sections */
+  .schedule-row .schedule-right {
+    text-align: center;
+  }
+  .schedule-row .schedule-right .title {
+    font-size: 26px;
+  }
+  .schedule-row .schedule-right .schedule-list {
     text-align: center;
   }
 }

@@ -1,10 +1,10 @@
-.shedule{
+.schedule{
     padding-top: 150px;
 }
 
-.shedule-row{
+.schedule-row{
     display: flex;
-    .shedule-right{
+    .schedule-right{
         margin-left: 70px;
         max-width: 480px;
         .title {
@@ -13,7 +13,7 @@
         .description {
             margin: 26px 0;
         }
-        .shedule-list {
+        .schedule-list {
             display: inline-block;
             margin-bottom: 26px;
             li {
