@@ -54,6 +54,12 @@
         display: flex;
         align-items: center;
     }
+    /* Feedback Sections */
+    .feedback-content{
+        .feedback-right{
+            margin-left: 50px;
+        }
+    }
 }
 
 // Custom Media Query
@@ -125,6 +131,23 @@
             grid-column: 1/3;
         }
     }
+    /* Feedback Sections */
+    .feedback-content{
+        flex-direction: column;
+        align-items: center;
+        &::before{
+            top:-50px;
+            right: -100px;
+            width: 1500%;
+            height: 95%;
+        }
+        .feedback-right{
+            margin-left: 0;
+            .slide{
+                margin-top: 50px;
+            }
+        }
+    }
 }
 
 // /* Small Devices, Tablets
@@ -185,6 +208,17 @@
             grid-column: unset;
         }
     }
+    /* Feedback Sections */
+    .feedback{
+        margin-top: 40px;
+    }
+    .feedback-content{
+        .feedback-right{
+            .person-text{
+                max-width: unset;
+            }
+        }
+    }
 }
 // Custom Media Query
 @media only screen and (max-width: 600px) {
@@ -230,6 +264,32 @@
     .rating-header{
         .title{
            font-size: 32px; 
+        }
+    }
+    /* Feedback Sections */
+    .feedback-header {
+        .title {
+            font-size: 32px;
+        }
+    }
+    .feedback-content{
+        .feedback-right{
+            .person-text{
+                p{
+                    font-size: 18px;
+                }
+            }
+            .slide{
+                .person-name{
+                    margin-right: 10px;
+                    h2{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
         }
     }
 }
@@ -287,6 +347,21 @@
     .rating-header {
         .title {
             font-size: 26px;
+        }
+    }
+    /* Feedback Sections */
+    .feedback-header{
+        .title{
+            font-size: 26px;
+        }
+    }
+    .feedback-content{
+        .feedback-right{
+            .slide{
+                .person-slide{
+                    display: none;
+                }
+            }
         }
     }
 }

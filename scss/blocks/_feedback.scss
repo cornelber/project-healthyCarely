@@ -55,6 +55,9 @@
                 }
             }
             .person-slide{
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
                 .arrow-left,
                 .arrow-right{
                     cursor: pointer;
