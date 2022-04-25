@@ -93,7 +93,9 @@
     // General
 
     // Global
-
+    .menu-burger{
+        display: unset;
+    }
     // Sections
     /* Header */
     .header-row {
@@ -342,6 +344,10 @@
     // Global
 
     // Sections
+    /*Header*/
+    .header-logo{
+        margin-right: 10px;
+    }
     /* Home Section */
     .home-content{
         text-align: center;
@@ -418,6 +424,21 @@
                 .social-media{
                     justify-content: center;
                 }
+            }
+        }
+    }
+}
+
+// Custom Media Navbar
+@media (orientation: landscape) and (max-height: 400px){
+    .header-nav-mobile{
+        height: 80px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            li+li {
+                margin-top: 0px;
+                margin-left: 20px;
             }
         }
     }
