@@ -954,6 +954,7 @@ a.second-card-btn:hover {
 .feedback-content .feedback-right .slide .person-slide .arrow-left,
 .feedback-content .feedback-right .slide .person-slide .arrow-right {
   cursor: pointer;
+  opacity: .5;
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
 }
@@ -964,7 +965,6 @@ a.second-card-btn:hover {
 }
 
 .feedback-content .feedback-right .slide .person-slide .arrow-left {
-  opacity: .5;
   margin-right: 16px;
 }
 
