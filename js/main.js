@@ -1,3 +1,4 @@
+// Navbar Burger
 let menuBurger = document.querySelector('.menu-burger');
 let menuNavbarMobile = document.querySelector('.header-nav-mobile');
 
