@@ -41,17 +41,31 @@ let slide = 0;
 const navigation = () => {
     if (slide > clients.length - 1){
         slide = 0;
+    } else if (slide < 0) {
+        slide = clients.length - 1;
     }
+
     personaImage.innerHTML = `<img src="${clients[slide].image}" alt="Person"/>`;
     personaFeedback.innerHTML = `<p>${clients[slide].feedback}</p>`;
     personaName.innerHTML =`
         <h2>${clients[slide].name}</h2>
         <p>${clients[slide].role}</p>
     `; 
-    slide++;
 }
 
 navigation();
-
-prevBtn.addEventListener('click', navigation);
-nextBtn.addEventListener('click', navigation);
+// Previous Button
+prevBtn.addEventListener('click', () => {
+    slide--;
+    navigation();
+})
+// Next Button
+nextBtn.addEventListener('click', () => {
+    slide++;
+    navigation();
+});
+// Set Interval
+setInterval(function() {
+  position++;
+  control();
+}, 9000);
