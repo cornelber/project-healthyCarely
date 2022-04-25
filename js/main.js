@@ -27,6 +27,12 @@ const clients = [
         role: 'Science technician',
         feedback: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."',
         image: './img/feedback-section/person-2.png'
+    },
+    {
+        name: 'Joy G. Wade',
+        role: 'Educational counselor',
+        feedback: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."',
+        image: './img/feedback-section/person-3.png'
     }
 ];
 
