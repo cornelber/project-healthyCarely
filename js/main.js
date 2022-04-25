@@ -66,6 +66,6 @@ nextBtn.addEventListener('click', () => {
 });
 // Set Interval
 setInterval(function() {
-  position++;
+  slide++;
   control();
 }, 9000);
